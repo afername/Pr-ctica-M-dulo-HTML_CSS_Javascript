@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Currículum Antonio F. Ameneiro</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="text/javascript" href="./script.js">
 </head>
 
 
@@ -13,7 +14,14 @@
 
     <section class="Menu">
         <nav>
-
+            <ul>
+                <li><a href="#Portada"> Portada</a></li>
+                <li><a href="#QuienSoy">Quien Soy</a></li>
+                <li><a href="#Estudios">Estudios</a></li>
+                <li><a href="#Experiencia">Experiencia</a></li>
+                <li><a href="#SobreMi">Sobre Mi</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
         </nav>
     </section>
 
@@ -21,7 +29,7 @@
 
     </section>
 
-    <section class="Quien soy">
+    <section class="QuienSoy">
 
     </section>
 
@@ -38,7 +46,53 @@
     </section>
 
     <section class="Contacto">
+        <div class="content-wrapper">
+            
+            <ul>
+                <li><label for="Nombre">Nombre</label>
+                    <input type="text" name="name" id="name" required>
+                </li>
+                <li><label for="email">Email Address</label>
+                <input type="email" name="email" id="email"> 
+                </li>
+                <li>
+                    <label for="conocido">¿Cómo me has conocido?</label>
+                    
+                    <div class="formulario">
+
+                 
+                    <form name="formulario">
+                    
+                        <table>
+                            <tr>
+                                <td>
+                                    <select name="one" onchange="if (this.value=='otro'){this.form['otro'].style.visibility='visible'}else {this.form['otro'].style.visibility='hidden'};">
+                            
+                                        <option value="" selected="selected">Elige...</option>    
+                                        <option value="linkedIn">LinkedIn</option>
+                                        <option value="trabajo">Trabajo</option>
+                                        <option value="cursos">Cursos</option>
+                                        <option value="amigos">Amigos</option>
+                                        <option value="otro">Otro</option>
+                                    </select> 
+                                    <input type="textbox" name="otro" style="visibility:hidden;"></input>
+                                </td>
+                            </tr>
+                        </table>
         
+                    </form> 
+                    </div>
+                </li>
+                <li><label for="tlfn">Número de teléfono</label>
+                    <input type="tel" name="tlfn" id="tlfn">
+                    </li>
+                <li><label for="msg">Mensaje</label>
+                    <p>Déjame tus comentarios</p>
+                    <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                </li>
+                <li><button type="submit">Enviar</button></li>
+            </ul>                
+        </div>
     </section>
 
 </body>
