@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Currículum Antonio F. Ameneiro</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="text/javascript" href="./script.js">
 </head>
 
@@ -15,29 +17,125 @@
     <section class="Menu">
         <nav>
             <ul>
-                <li><a href="#Portada"> Portada</a></li>
-                <li><a href="#QuienSoy">Quien Soy</a></li>
-                <li><a href="#Estudios">Estudios</a></li>
-                <li><a href="#Experiencia">Experiencia</a></li>
-                <li><a href="#SobreMi">Sobre Mi</a></li>
-                <li><a href="#Contacto">Contacto</a></li>
+                <li><a href="#inicio"> Inicio</a></li>
+                <li><a href="#quienSoy">Quien Soy</a></li>
+                <li><a href="#estudios">Estudios</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#sobreMi">Sobre Mi</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </section>
 
-    <section class="Portada">
+    <section id="inicio">
+            <header>
+                <div class="title-wrapper">
+                    <h1 class="h1-section">Clean Blog</h1>
+                    <p>A Blog Theme by Start Bootstrap</p>
+                </div>
+            </header>
+            <div class="content-wrapper">
+                <article>
+                    <h2>Man must explore, and this is exploration at its greatest</h2>
+                    <p>Problems look mighty small from 150 miles up</p>
+                    <footer>                    
+                        <p>Posted by
+                            <span class=autor>Start Bootstrap</span> on
+                            <time datetime="2018-09-24">September 24, 2018</time>
+                        </p>
+                    </footer>
+                </article>
+                
+                <article>
+                    <h2>Science has not yet mastered prophecy</h2>
+                    <p>We predict too much for the next year and yet far too little for the next ten.</p>
+                    <footer>
+                        <p>Posted by
+                            <span class=autor>Start Bootstrap</span> on
+                            <time datetime="2018-08-24">August 24, 2018</time>
+                        </p>
+                    </footer>
+                    
+            </div>
+        </section>
+
+
+    <section id="quienSoy">
+        <header>
+            <h2>¿Quién soy?</h2>
+        </header>
+
 
     </section>
-
-    <section class="QuienSoy">
-        <h2></h2>
+        
+    
+    <section class="estudios">
+            <header>
+                <h2>Estudios</h2>
+            </header>    
+    
     </section>
-        <h2></h2>
-    <section class="Estudios">
+        
+    
+    <section id="experiencia">
+            <header>
+                <div class="title-wrapper">
+                    <h2 class="h2-section">Experiencia</h2>
+                </div>
+            </header>
+            <div class="content-wrapper">
 
-    </section>
+            <article>
+                    <h2>System Safety & Reliability Project Manager – APSYS (Airbus Group) – Spain and
+                UK</h2>
+                    <p>APSYS UK and SP RAMS project management (APSYS TLC / PO WPL)</p>
+                    <p>APSYS SP team lead (technical & resource management)<p>
+                    <p>RAMS Engineering activities for Airbus Operations and Airbus Defence & Space</p>
+                </article>
 
-    <section class="Experiencia">
+
+                    <footer>                    
+                        <p>Posted by
+                            <span class=autor>Start Bootstrap</span> on
+                            <time datetime="2018-09-24">September 24, 2018</time>
+                        </p>
+                    </footer>
+                </article>
+                
+                <article>
+                    <h2>Safety & Reliability Engineer – APSYS (Airbus Group) – Madrid, Spain</h2>
+                    <p>Programs (actual hands-on experience): SA, LR, A350, A380, A400M</p>
+                    <p>Systems (actual hands-on experience and knowledge): ATA21, 26A, 32, 33C, 35, 36, 44, 46, 47A, 49</p>
+                    <p>Safety & Reliability Assessments (RAMS) to support A/C development</p>
+                    <p>Functional Safety, PRA and ZSA</p>
+                    <p>Continued Airworthiness (Impact on Airworthiness) safety assessments</p>
+
+                    <footer>
+                        <p>Posted by
+                            <span class=autor>Start Bootstrap</span> on
+                            <time datetime="2018-08-24">August 24, 2018</time>
+                        </p>
+                    </footer>
+
+                </article>
+                    
+
+                <article>
+                    <h2>Safety & Reliability Engineer - QPAC (as Subcontractor to Airbus) – Hamburg,
+                Germany</h2>
+                    <p>Programs (actual hands-on experience): A350, SA, LR (RnT)</p>
+                    <p>Systems (actual hands-on experience and knowledge): ATA 21, 29, 31F, 33B, 35, 44B-C-D-E, 45A-C-D, 46C-D</p>
+                    <p>Safety & Reliability Assessments (RAMS) to support A/C development - SSA, FHA, PRA, CMA, FMEA, V&V</p>
+                    
+
+                    <footer>
+                        <p>Posted by
+                            <span class=autor>Start Bootstrap</span> on
+                            <time datetime="2018-08-24">August 24, 2018</time>
+                        </p>
+                    </footer>
+
+                </article>
 
     </section>
 
@@ -48,6 +146,11 @@
     <section class="Contacto">
         <div class="content-wrapper">
             
+            <header>
+                <h2>Contacto</h2>
+            </header>
+            
+
             <ul>
                 <li><label for="Nombre">Nombre</label>
                     <input type="text" name="name" id="name" required>
@@ -98,10 +201,3 @@
 </body>
 
 </html>
-
-/*- Portada: donde pondremos una imagen de foto con texto (deberá ocupar el viewport de la pantalla}
-- Quien soy: donde se mostrará información de interés y una foto vuestra.
-- Estudios: sección donde aparecerán nuestros diferentes estudios o cursos realizados.
-- Experiencia: donde se contará la experiencia laboral con la que contamos.
-- Sobre mí: Sección donde mostraremos algunos de nuestros intereses o aficiones con un pequeño video (máximo 10 Mb).
-- Contacto: donde se mostrará los datos de contacto*/
